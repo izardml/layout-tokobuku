@@ -1,0 +1,21 @@
+db_tokobuku {
+    buku {
+        id; => unique
+        judul;
+        author;
+        harga;
+        stok;
+        slug; => unique
+    }
+
+    genre {
+        id;
+        name;
+    }
+
+    genre_buku {
+        id;
+        buku;
+        genre;
+    }
+}

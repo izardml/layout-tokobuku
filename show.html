@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Toko Buku</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <style>
+            .img-display {
+                height: 100%;
+            }
+
+            @media (max-width: 992px) {
+                .img-display {
+                    height: 75vw;
+                }
+            }
+        </style>
+    </head>
+    <body style="height: 3000px">
+        <!-- S:Header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container ms-auto">
+                <a class="navbar-brand" href=".">Toko Buku</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="table.html">Buku</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="input-group rounded overflow-hidden">
+                            <span class="input-group-text text-muted" id="basic-addon1"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon1" />
+                            <button class="btn btn-light border d-lg-none" type="submit" id="basic-addon1">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- E:Header -->
+
+        <!-- S:Detail -->
+        <section id="detail" class="pt-3">
+            <div class="container">
+                <div class="row mb-3">
+                    <!-- S:Prod Image -->
+                    <div class="col-md-3 px-lg-0 px-4">
+                        <div class="card w-100 p-2" style="height: 21rem">
+                            <img src="img/cover-1.jpg" alt="Gotoubun no Hanayome 01" class="d-block m-auto img-display" />
+                        </div>
+                    </div>
+                    <!-- E:Prod Image -->
+
+                    <!-- S:Prod Desc -->
+                    <div class="col-md-6 px-lg-5 px-4 py-lg-0 py-4">
+                        <p>Author Name</p>
+                        <h3>Gotoubun no Hanayome 01</h3>
+                        <h1>Rp. <span id="harga">50.000</span></h1>
+                        <hr />
+                        <h5>Deskripsi Buku</h5>
+                        <p style="text-align: justify">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aspernatur praesentium repellat corrupti maxime debitis vel sapiente nisi ullam, minus rerum quo saepe aliquid ratione repellendus officiis
+                            quibusdam illum? Vitae?
+                        </p>
+                        <p style="text-align: justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a placeat earum pariatur porro quas et quaerat numquam atque facere qui consequuntur deserunt officia adipisci, eius aspernatur illum minima itaque.
+                        </p>
+                        <p style="text-align: justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, maiores dolorum a, nihil laboriosam ut, molestias ab ipsa beatae soluta eum! Debitis excepturi temporibus ut eos laudantium qui dolore
+                            perspiciatis.
+                        </p>
+                    </div>
+                    <!-- E:Prod Desc -->
+
+                    <!-- S:Form Pemesanan -->
+                    <div class="col-md-3 px-lg-0 px-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="#" method="post">
+                                    <h5 class="card-title">Atur jumlah pemesanan</h5>
+                                    <input type="number" name="jumlah" id="jumlah" class="form-control" />
+                                    <hr />
+                                    <h5 class="card-title d-flex justify-content-between">
+                                        <span>Total</span>
+                                        <span>Rp. <span id="total-harga">50.000</span></span>
+                                    </h5>
+                                    <input type="submit" value="Pesan" class="btn btn-danger form-control" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E:Form Pemesanan -->
+                </div>
+            </div>
+        </section>
+        <!-- E:Detail -->
+
+        <!-- S:Rating -->
+        <section id="rating" class="pt-3">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h2>Ulasan Pembeli</h2>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <!-- S:Rating -->
+                    <div class="col-md-3 px-lg-0 px-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Rating pembeli</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="text-center col">
+                                        <span class="h1">4.8</span>
+                                        <span>/5.0</span>
+                                    </p>
+                                    <form action="" class="col">
+                                        <div>
+                                            <label for="">5</label>
+                                            <input type="range" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <label for="">4</label>
+                                            <input type="range" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <label for="">3</label>
+                                            <input type="range" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <label for="">2</label>
+                                            <input type="range" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <label for="">1</label>
+                                            <input type="range" name="" id="" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E:Rating -->
+
+                    <!-- S:Ulasan -->
+                    <div class="col-md-9 ps-lg-5 ps-4 py-lg-0 py-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">March 7th</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div>
+                                    <input type="range" name="" id="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Welt Beliau</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div>
+                                    <input type="range" name="" id="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Herta</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div>
+                                    <input type="range" name="" id="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E:Ulasan -->
+                </div>
+            </div>
+        </section>
+        <!-- E:Rating -->
+
+        <!-- S:Related Prod -->
+        <section id="produk" class="pt-3">
+            <div class="container">
+                <div class="row mb-3 justify-content-between">
+                    <div class="col-lg-3 col-6">
+                        <h2>Related produk</h2>
+                    </div>
+                    <div class="col-lg-3 col-6 align-self-center">
+                        <a href="#" class="float-end">Lihat Lainnya</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-2 col-6">
+                        <div class="card" style="height: 21rem">
+                            <div class="card-body p-0" style="max-height: 60%">
+                                <a href="show.html" class="stretched-link"><img src="img/cover-1.jpg" class="d-block m-auto h-100" alt="Cover Komik" /></a>
+                            </div>
+                            <div class="card-body" style="max-height: 40%">
+                                <p class="card-text text-truncate">The Quintessential Quintuplets 01</p>
+                                <p class="card-text fw-bold">Rp. 40.000</p>
+                                <p class="card-text">Stok 7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="card" style="height: 21rem">
+                            <div class="card-body p-0" style="max-height: 60%">
+                                <a href="#" class="stretched-link"><img src="img/cover-2.jpg" class="d-block m-auto h-100" alt="Cover Komik" /></a>
+                            </div>
+                            <div class="card-body" style="max-height: 40%">
+                                <p class="card-text text-truncate">Oshi no Ko 1</p>
+                                <p class="card-text fw-bold">Rp. 40.000</p>
+                                <p class="card-text">Stok 7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="card" style="height: 21rem">
+                            <div class="card-body p-0" style="max-height: 60%">
+                                <a href="#" class="stretched-link"><img src="img/cover-3.jpg" class="d-block m-auto h-100" alt="Cover Komik" /></a>
+                            </div>
+                            <div class="card-body" style="max-height: 40%">
+                                <p class="card-text text-truncate">Kanojo Okarishimasu 01</p>
+                                <p class="card-text fw-bold">Rp. 40.000</p>
+                                <p class="card-text">Stok 7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="card" style="height: 21rem">
+                            <div class="card-body p-0" style="max-height: 60%">
+                                <a href="#" class="stretched-link"><img src="img/cover-4.jpg" class="d-block m-auto h-100" alt="Cover Komik" /></a>
+                            </div>
+                            <div class="card-body" style="max-height: 40%">
+                                <p class="card-text text-truncate">Re: Zero, Starting Life in Another World 01</p>
+                                <p class="card-text fw-bold">Rp. 40.000</p>
+                                <p class="card-text">Stok 7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="card" style="height: 21rem">
+                            <div class="card-body p-0" style="max-height: 60%">
+                                <a href="#" class="stretched-link"><img src="img/cover-4.jpg" class="d-block m-auto h-100" alt="Cover Komik" /></a>
+                            </div>
+                            <div class="card-body" style="max-height: 40%">
+                                <p class="card-text text-truncate">Re: Zero, Starting Life in Another World 01</p>
+                                <p class="card-text fw-bold">Rp. 40.000</p>
+                                <p class="card-text">Stok 7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="card" style="height: 21rem">
+                            <div class="card-body p-0" style="max-height: 60%">
+                                <a href="#" class="stretched-link"><img src="img/cover-4.jpg" class="d-block m-auto h-100" alt="Cover Komik" /></a>
+                            </div>
+                            <div class="card-body" style="max-height: 40%">
+                                <p class="card-text text-truncate">Re: Zero, Starting Life in Another World 01</p>
+                                <p class="card-text fw-bold">Rp. 40.000</p>
+                                <p class="card-text">Stok 7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- E:Related Prod -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
