@@ -16,12 +16,18 @@
                 .img-display {
                     height: 75vw;
                 }
+
+                .truncate {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
             }
         </style>
     </head>
-    <body style="height: 3000px">
+    <body>
         <!-- S:Header -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-3">
             <div class="container ms-auto">
                 <a class="navbar-brand" href=".">Toko Buku</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +42,7 @@
                             <a class="nav-link active" href="buku.html">Buku</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">User</a>
+                            <a class="nav-link" href="user.html">User</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Logout</a>
@@ -55,39 +61,108 @@
         <!-- E:Header -->
 
         <!-- S:CRUD Table -->
-        <section id="data" class="pt-3">
+        <section id="data" class="mb-3">
             <div class="container">
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <a href="create.html" class="float-end"><button class="btn btn-danger">Tambah produk</button></a>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered rounded-3 overflow-hidden">
+                                <thead class="text-white bg-danger">
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Cover</th>
+                                        <th scope="col">Judul</th>
+                                        <th scope="col">Author</th>
+                                        <th scope="col">Genre</th>
+                                        <th scope="col">Sinopsis</th>
+                                        <th scope="col">Stok</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="transform: rotate(0)">
+                                        <th>1</th>
+                                        <td>
+                                            <a href="edit.html" class="stretched-link"><img src="img/cover-1.jpg" alt="Gotoubun no Hanayome" style="width: 150px" /></a>
+                                        </td>
+                                        <td>Gotoubun no Hanayome</td>
+                                        <td>Negi Haruba</td>
+                                        <td>Romance, Comedy, School,</td>
+                                        <td class="truncate">
+                                            <p style="text-align: justify">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aspernatur praesentium repellat corrupti maxime debitis vel sapiente nisi ullam, minus rerum quo saepe aliquid ratione
+                                                repellendus officiis quibusdam illum? Vitae?
+                                            </p>
+                                            <p style="text-align: justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a placeat earum pariatur porro quas et quaerat numquam atque facere qui consequuntur deserunt officia adipisci, eius aspernatur
+                                                illum minima itaque.
+                                            </p>
+                                            <p style="text-align: justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, maiores dolorum a, nihil laboriosam ut, molestias ab ipsa beatae soluta eum! Debitis excepturi temporibus ut eos laudantium
+                                                qui dolore perspiciatis.
+                                            </p>
+                                        </td>
+                                        <td>50</td>
+                                        <td>Rp. <span>50.000</span></td>
+                                    </tr>
+                                    <tr style="transform: rotate(0)">
+                                        <th>2</th>
+                                        <td>
+                                            <a href="#" class="stretched-link"><img src="img/cover-2.jpg" alt="Oshi no KO" style="width: 150px" /></a>
+                                        </td>
+                                        <td>Oshi no Ko</td>
+                                        <td>Aka Akasaka</td>
+                                        <td>Idol, Mystery,</td>
+                                        <td class="truncate">
+                                            <p style="text-align: justify">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aspernatur praesentium repellat corrupti maxime debitis vel sapiente nisi ullam, minus rerum quo saepe aliquid ratione
+                                                repellendus officiis quibusdam illum? Vitae?
+                                            </p>
+                                            <p style="text-align: justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a placeat earum pariatur porro quas et quaerat numquam atque facere qui consequuntur deserunt officia adipisci, eius aspernatur
+                                                illum minima itaque.
+                                            </p>
+                                            <p style="text-align: justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, maiores dolorum a, nihil laboriosam ut, molestias ab ipsa beatae soluta eum! Debitis excepturi temporibus ut eos laudantium
+                                                qui dolore perspiciatis.
+                                            </p>
+                                        </td>
+                                        <td>50</td>
+                                        <td>Rp. <span>50.000</span></td>
+                                    </tr>
+                                    <tr style="transform: rotate(0)">
+                                        <th>3</th>
+                                        <td>
+                                            <a href="#" class="stretched-link"><img src="img/cover-3.jpg" alt="Kanojo Okarishimasu" style="width: 150px" /></a>
+                                        </td>
+                                        <td>Kanojo Okarishimasu</td>
+                                        <td>Miyajima Reiji</td>
+                                        <td>Romance, Comedy, School,</td>
+                                        <td class="truncate">
+                                            <p style="text-align: justify">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aspernatur praesentium repellat corrupti maxime debitis vel sapiente nisi ullam, minus rerum quo saepe aliquid ratione
+                                                repellendus officiis quibusdam illum? Vitae?
+                                            </p>
+                                            <p style="text-align: justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a placeat earum pariatur porro quas et quaerat numquam atque facere qui consequuntur deserunt officia adipisci, eius aspernatur
+                                                illum minima itaque.
+                                            </p>
+                                            <p style="text-align: justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, maiores dolorum a, nihil laboriosam ut, molestias ab ipsa beatae soluta eum! Debitis excepturi temporibus ut eos laudantium
+                                                qui dolore perspiciatis.
+                                            </p>
+                                        </td>
+                                        <td>50</td>
+                                        <td>Rp. <span>50.000</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
